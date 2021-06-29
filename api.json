@@ -1,0 +1,431 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "API for Software Development Test",
+      "version": "1.0.0",
+      "title": "TV Series API",
+      "contact": {
+        "email": "alexeifentom@gmail.com"
+      }
+    },
+    "host": "virtserver.swaggerhub.com",
+    "basePath": "/haisoft/crud/1.0.0",
+    "tags": [
+      {
+        "name": "GET"
+      },
+      {
+        "name": "POST"
+      },
+      {
+        "name": "DELETE"
+      }
+    ],
+    "schemes": [
+      "https"
+    ],
+    "paths": {
+      "/getActors": {
+        "get": {
+          "summary": "Get all actors",
+          "description": "Gets every single actor",
+          "operationId": "getActors",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "item",
+              "description": "item to catch",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Actors"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/getDirectors": {
+        "get": {
+          "summary": "Get all directors",
+          "description": "Gets every single director",
+          "operationId": "getDirectors",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "item",
+              "description": "item to catch",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Directors"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/getEpisodes": {
+        "get": {
+          "summary": "Get episodes",
+          "description": "Gets every single episode",
+          "operationId": "getEpisodes",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "item",
+              "description": "item to catch",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Episodes"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/getSeries": {
+        "get": {
+          "summary": "Get series",
+          "description": "Gets every single serie",
+          "operationId": "getSeries",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "item",
+              "description": "item to catch",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Series"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/postActors": {
+        "post": {
+          "summary": "add new Actor",
+          "description": "Adds an actor",
+          "operationId": "addActors",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "item",
+              "description": "item to send",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Actors"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/postDirectors": {
+        "post": {
+          "summary": "Adds a director",
+          "description": "Adds a director",
+          "operationId": "addDirectors",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "item",
+              "description": "item to send",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Directors"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/postEpisodes": {
+        "post": {
+          "summary": "Adds episodes",
+          "description": "Adds an episode",
+          "operationId": "addEpisodes",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "item",
+              "description": "item to send",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Episodes"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/postSeries": {
+        "post": {
+          "summary": "Adds Series",
+          "description": "Add a Serie",
+          "operationId": "addSeries",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "item",
+              "description": "item to send",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Episodes"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/deleteActor": {
+        "delete": {
+          "summary": "deletes Actor",
+          "description": "deletes actor",
+          "operationId": "deleteActors",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "item",
+              "description": "item to delete",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Actors"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/deleteDirectors": {
+        "delete": {
+          "summary": "deletes a director",
+          "description": "deletes a director",
+          "operationId": "deleteDirectors",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "item",
+              "description": "item to delete",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Directors"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/deleteEpisodes": {
+        "delete": {
+          "summary": "deletes episodes",
+          "description": "deletes an episode",
+          "operationId": "deleteEpisodes",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "item",
+              "description": "item to delete",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Episodes"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/deleteSeries": {
+        "delete": {
+          "summary": "deletes Series",
+          "description": "deletes a Serie",
+          "operationId": "deleteSeries",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "item",
+              "description": "item to send",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Episodes"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Actors": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "format": "text"
+          }
+        }
+      },
+      "Directors": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "format": "text"
+          }
+        }
+      },
+      "Series": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "format": "text"
+          }
+        }
+      },
+      "Episodes": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "seriesId": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      }
+    }
+  }
