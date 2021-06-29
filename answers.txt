@@ -1,0 +1,39 @@
+1.- Unit Testing usually is conducted by the developers, since they have to test their functions or modules before releasing 
+them to a production environment. Integration Tests are executed by specific teams, and they are supposed to test a complete
+implementation of software and not just a function or feature, and acceptance tests are executed mostly by the client himself
+or end users.
+
+2.- Software projects can be a little bit unpredictable, since this kind of projects are not defined by a starting - ending 
+points, moreover, a project like this can start with an undefined limit date, and live for years. Since this is 
+problematic for the common ways to develop a project (speaking of, for example, building a house, create a new product, etc)
+by the past few years, new ways to take a software project have appeared, such as SCRUM, which can be defined as an iterative
+process of continuous development, where multiple teams work together leadered by someone else, who deals with al the 
+requirements for the project, the client and even their own co-workers (scrum master). Everyone has to work in little features
+every x weeks (usually 2 weeks), where the teams assign tasks by themselves and stablish, also by themselves, specific
+times to deliver, creating iterative schedules where there's always something to create, develop and deliver. With this, companies
+can keep track of their goals and objectives, and continuosly create and develop an app, web site, game, etc.
+
+3.- Depending of their goal, software development teams can work with the Test Driven Development, which a way to work, firstly
+creating unit test for the specific feature or module that has to be coded, then, once the test is ready, the coding part starts.
+This is important since it achieves to deliver tested code that has been thinked to work the way it does, avoiding anything
+unnecesary or improvised to deliver the final and expected result.
+
+4.- Continuous Integration and Continuous Delivery (CI/CD) are both practices for keep a software updated. CI applys when a complete
+team is working in the same software, like an APP, where thanks to other tools like git or any other similar, they can work in multiple 
+tasks and so, keep updating the app. And, with Continuous Delivery, the app can be updated via updating a repository that has been already 
+programmed for update a new revision of the software.
+
+5.- A monolithic application has everything it needs already build in. Like a database, front end, etc. It's independent of any other 
+application, while an app with microservices is divided in multiple modules, each of those working independently, making them easier to 
+mantain and upgrade.
+
+6.- An API for searching tickets for a concert; it doesn't need a complete PC/Server to run, it just needs a few resources that can be 
+managed by a cloud provider, and thus, you only need to concentrate in develop the API.
+
+7.- DevOps principles are based on cooperation and continuous deployment; a part of them are mainly focused on development and the other 
+part on mantaining and monitoring.
+
+8.- Chia, it's a creative way to keep cryptocurrency "green"; Multiple versions of Linux, like "Pop! OS"; TensorFlow, I've used in school projects, 
+and it always amazes me how powerful is.
+
+9.- The Subtle Art of Not Giving a F*ck; The Code Book
